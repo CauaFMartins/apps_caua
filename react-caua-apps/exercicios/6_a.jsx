@@ -13,19 +13,18 @@ function App() {
     <div className="quadrado">
       <div className="botoes">
         <button onClick={alternarVisibilidade}>
-          {visivel ? 'Esconder Foto' : 'Mostrar Foto'}
+          {visivel ? 'Esconder' : 'Mostrar'}
         </button>
       </div>
 
       {visivel && (
-        <div>
-          <h2>
-            <img src="https://www.tricurioso.com/wp-content/uploads/2018/09/curiosidades-de-avatar-3.jpg" />
-          </h2>
+        <div className="texto">
+          <h2>Olá! Este é o texto que pode ser mostrado ou escondido.</h2>
         </div>
       )}
     </div>
   )
 }
+
 
 export default App;
