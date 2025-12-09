@@ -1,1 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cauã Martins Fontes da Silva - Portfólio</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            @apply bg-gray-950 text-white;
+        }
+        /* Efeito de gradiente para textos destacados */
+        .text-gradient-purple {
+            @apply bg-gradient-to-r from-purple-400 to-indigo-600 text-transparent bg-clip-text;
+        }
+        .section-title {
+            @apply text-4xl md:text-5xl font-bold text-center mb-12 relative;
+        }
+        .section-title::after {
+            content: '';
+            @apply absolute left-1/2 -translate-x-1/2 bottom-[-15px] w-20 h-1 bg-purple-600 rounded-full;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
 
+    
+<header class="fixed top-0 w-full bg-gray-950/90 backdrop-blur-sm border-b border-gray-800 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gradient-purple">
+                Cauã Fontes
+            </a>
+            <div class="space-x-8 hidden md:block">
+                <a href="#sobre" class="text-gray-300 hover:text-purple-400 transition-colors duration-300">Sobre</a>
+                <a href="#projetos" class="text-gray-300 hover:text-purple-400 transition-colors duration-300">Projetos</a>
+                <a href="#contato" class="text-gray-300 hover:text-purple-400 transition-colors duration-300">Contato</a>
+            </div>
+        </nav>
+    </header>
+
+    
+<section id="hero" class="min-h-screen flex items-center justify-center px-6 pt-20 bg-gradient-to-br from-gray-950 to-purple-950/30">
+        <div class="container mx-auto text-center max-w-4xl">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-4 leading-tight">
+                Cauã Martins Falcão <br class="md:hidden"> <span class="text-gradient-purple">Fontes da Silva</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-8">
+                Estudante Técnico de Informática
+            </p>
+            <p class="text-lg text-gray-400 mb-12 leading-relaxed">
+                Desenvolvedor apaixonado por tecnologia, com foco em desenvolvimento web,
+                bancos de dados e criação de jogos.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#projetos" class="px-8 py-4 bg-purple-700 hover:bg-purple-800 text-white rounded-lg shadow-lg transition-all duration-300 text-lg font-medium">
+                    Ver Projetos
+                </a>
+                <a href="#sobre" class="px-8 py-4 border border-purple-600 text-purple-300 hover:bg-purple-900/40 rounded-lg shadow-md transition-all duration-300 text-lg font-medium">
+                    Sobre Mim
+                </a>
+            </div>
+        </div>
+    </section>
+
+    
+<section id="sobre" class="py-24 px-6 bg-gray-900">
+        <div class="container mx-auto max-w-5xl">
+            <h2 class="section-title">Sobre <span class="text-purple-400">Mim</span></h2>
+            <div class="bg-gray-800 p-8 rounded-xl shadow-lg border border-gray-700">
+                <p class="text-lg text-gray-300 mb-4 leading-relaxed">
+                    Sou estudante do curso técnico em Informática, com interesse especial em desenvolvimento web,
+                    bancos de dados, programação e criação de jogos.
+                </p>
+                <p class="text-lg text-gray-300 mb-4 leading-relaxed">
+                    Tenho estudado ativamente áreas como JavaScript, Firebase, NestJS, redes de computadores
+                    e projetos com Arduino. Também exploro engines como Godot para desenvolver mecânicas,
+                    sistemas e protótipos de jogos.
+                </p>
+                <p class="text-lg text-gray-300 leading-relaxed">
+                    Gosto de criar sistemas funcionais, experimentar novas tecnologias e compreender como
+                    diferentes áreas da TI se conectam para formar soluções completas.
+                </p>
+            </div>
+
+            
+            <h3 class="text-3xl font-bold text-center mt-20 mb-8 text-purple-400">Habilidades Técnicas</h3>
+            <div class="flex flex-wrap justify-center gap-4">
+                <span class="px-5 py-2 bg-purple-700/30 text-purple-200 rounded-full text-md font-medium border border-purple-600/50 shadow-md">JavaScript</span>
+                <span class="px-5 py-2 bg-purple-700/30 text-purple-200 rounded-full text-md font-medium border border-purple-600/50 shadow-md">TypeScript</span>
+                <span class="px-5 py-2 bg-purple-700/30 text-purple-200 rounded-full text-md font-medium border border-purple-600/50 shadow-md">Node.js</span>
+                <span class="px-5 py-2 bg-purple-700/30 text-purple-200 rounded-full text-md font-medium border border-purple-600/50 shadow-md">React</span>
+                <span class="px-5 py-2 bg-purple-700/30 text-purple-200 rounded-full text-md font-medium border border-purple-600/50 shadow-md">Express.js</span>
+                <span class="px-5 py-2 bg-purple-700/30 text-purple-200 rounded-full text-md font-medium border border-purple-600/50 shadow-md">NestJS</span>
+                <span class="px-5 py-2 bg-purple-700/30 text-purple-200 rounded-full text-md font-medium border border-purple-600/50 shadow-md">EJS</span>
+                <span class="px-5 py-2 bg-purple-700/30 text-purple-200 rounded-full text-md font-medium border border-purple-600/50 shadow-md">HTML5</span>
+                <span class="px-5 py-2 bg-purple-700/30 text-purple-200 rounded-full text-md font-medium border border-purple-600/50 shadow-md">CSS3</span>
+                <span class="px-5 py-2 bg-purple-700/30 text-purple-200 rounded-full text-md font-medium border border-purple-600/50 shadow-md">Firebase</span>
+                <span class="px-5 py-2 bg-purple-700/30 text-purple-200 rounded-full text-md font-medium border border-purple-600/50 shadow-md">Prisma ORM</span>
+                <span class="px-5 py-2 bg-purple-700/30 text-purple-200 rounded-full text-md font-medium border border-purple-600/50 shadow-md">Vite</span>
+                <span class="px-5 py-2 bg-purple-700/30 text-purple-200 rounded-full text-md font-medium border border-purple-600/50 shadow-md">Arduino</span>
+                <span class="px-5 py-2 bg-purple-700/30 text-purple-200 rounded-full text-md font-medium border border-purple-600/50 shadow-md">Godot Engine</span>
+                
+                <span class="px-5 py-2 bg-purple-700/30 text-purple-200 rounded-full text-md font-medium border border-purple-600/50 shadow-md">Unity Engine</span>
+                <span class="px-5 py-2 bg-purple-700/30 text-purple-200 rounded-full text-md font-medium border border-purple-600/50 shadow-md">C#</span>
+            </div>
+        </div>
+    </section>
+
+    
+<section id="projetos" class="py-24 px-6 bg-gray-950">
+        <div class="container mx-auto max-w-7xl">
+            <h2 class="section-title">Meus <span class="text-purple-400">Projetos</span></h2>
+            <p class="text-lg text-gray-400 text-center mb-16 max-w-2xl mx-auto">
+                Confira alguns dos projetos que desenvolvi durante minha jornada no curso técnico.
+            </p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                
+                <div class="bg-gray-800 p-8 rounded-xl shadow-lg border border-gray-700 hover:border-purple-600 transition-all duration-300 group">
+                    <h3 class="text-2xl font-semibold mb-4 text-purple-400 group-hover:text-purple-300 transition-colors">Plataforma 2D Pixel Adventure (Unity)</h3>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Jogo plataforma 2D em pixel art desenvolvido na Unity. Traz ambientes místicos com plataformas flutuantes, cristais e efeitos mágicos. Possui coleta de moedas, física 2D, movimentação, IA básica de inimigos e um estilo visual de fantasia sombria.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-purple-700/20 text-purple-300 rounded-full text-sm">Unity Engine (2D)</span>
+                        <span class="px-3 py-1 bg-purple-700/20 text-purple-300 rounded-full text-sm">C#</span>
+                        <span class="px-3 py-1 bg-purple-700/20 text-purple-300 rounded-full text-sm">Rigidbody2D / Colliders</span>
+                        <span class="px-3 py-1 bg-purple-700/20 text-purple-300 rounded-full text-sm">Pixel Art</span>
+                        <span class="px-3 py-1 bg-purple-700/20 text-purple-300 rounded-full text-sm">Sistema de Animação</span>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 p-8 rounded-xl shadow-lg border border-gray-700 hover:border-purple-600 transition-all duration-300 group">
+                    <h3 class="text-2xl font-semibold mb-4 text-purple-400 group-hover:text-purple-300 transition-colors">Sandbox — Aplicação Express com EJS</h3>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Aplicação Node.js/Express com páginas utilizando EJS como motor de renderização. Inclui páginas como login, dash e outras. Segue a estrutura clássica do Express Generator.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-purple-700/20 text-purple-300 rounded-full text-sm">Node.js</span>
+                        <span class="px-3 py-1 bg-purple-700/20 text-purple-300 rounded-full text-sm">Express</span>
+                        <span class="px-3 py-1 bg-purple-700/20 text-purple-300 rounded-full text-sm">EJS</span>
+                        <span class="px-3 py-1 bg-purple-700/20 text-purple-300 rounded-full text-sm">JavaScript</span>
+                        <span class="px-3 py-1 bg-purple-700/20 text-purple-300 rounded-full text-sm">HTML</span>
+                        <span class="px-3 py-1 bg-purple-700/20 text-purple-300 rounded-full text-sm">CSS</span>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 p-8 rounded-xl shadow-lg border border-gray-700 hover:border-purple-600 transition-all duration-300 group">
+                    <h3 class="text-2xl font-semibold mb-4 text-purple-400 group-hover:text-purple-300 transition-colors">Fluxo de Login — Fullstack (TS + Vite)</h3>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Projeto dividido em backend (TypeScript) e frontend (Vite + TS). Implementa um fluxo de login completo com validação, interfaces modernas e comunicação entre cliente e servidor.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-purple-700/20 text-purple-300 rounded-full text-sm">TypeScript</span>
+                        <span class="px-3 py-1 bg-purple-700/20 text-purple-300 rounded-full text-sm">Node.js</span>
+                        <span class="px-3 py-1 bg-purple-700/20 text-purple-300 rounded-full text-sm">Vite</span>
+                        <span class="px-3 py-1 bg-purple-700/20 text-purple-300 rounded-full text-sm">Express</span>
+                        <span class="px-3 py-1 bg-purple-700/20 text-purple-300 rounded-full text-sm">HTML</span>
+                        <span class="px-3 py-1 bg-purple-700/20 text-purple-300 rounded-full text-sm">CSS</span>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 p-8 rounded-xl shadow-lg border border-gray-700 hover:border-purple-600 transition-all duration-300 group">
+                    <h3 class="text-2xl font-semibold mb-4 text-purple-400 group-hover:text-purple-300 transition-colors">Andromeda Harmony (Clone Spotify)</h3>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Um clone visual do Spotify desenvolvido com React, simulando a interface principal do app. Possui componentes reativos, estilização própria e ambiente configurado com Node + bundler.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-purple-700/20 text-purple-300 rounded-full text-sm">React</span>
+                        <span class="px-3 py-1 bg-purple-700/20 text-purple-300 rounded-full text-sm">JavaScript</span>
+                        <span class="px-3 py-1 bg-purple-700/20 text-purple-300 rounded-full text-sm">Vite/Webpack</span>
+                        <span class="px-3 py-1 bg-purple-700/20 text-purple-300 rounded-full text-sm">HTML</span>
+                        <span class="px-3 py-1 bg-purple-700/20 text-purple-300 rounded-full text-sm">CSS</span>
+                        <span class="px-3 py-1 bg-purple-700/20 text-purple-300 rounded-full text-sm">ESLint</span>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 p-8 rounded-xl shadow-lg border border-gray-700 hover:border-purple-600 transition-all duration-300 group">
+                    <h3 class="text-2xl font-semibold mb-4 text-purple-400 group-hover:text-purple-300 transition-colors">API de E-commerce (NestJS + Prisma)</h3>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Backend robusto estruturado em NestJS com múltiplos módulos: produto, categoria, fornecedor, carrinho, pedido etc. Utiliza Prisma ORM para comunicação com banco de dados.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-purple-700/20 text-purple-300 rounded-full text-sm">NestJS</span>
+                        <span class="px-3 py-1 bg-purple-700/20 text-purple-300 rounded-full text-sm">TypeScript</span>
+                        <span class="px-3 py-1 bg-purple-700/20 text-purple-300 rounded-full text-sm">Prisma ORM</span>
+                        <span class="px-3 py-1 bg-purple-700/20 text-purple-300 rounded-full text-sm">Node.js</span>
+                        <span class="px-3 py-1 bg-purple-700/20 text-purple-300 rounded-full text-sm">REST API</span>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 p-8 rounded-xl shadow-lg border border-gray-700 hover:border-purple-600 transition-all duration-300 group">
+                    <h3 class="text-2xl font-semibold mb-4 text-purple-400 group-hover:text-purple-300 transition-colors">Catálogo de Doramas (Firebase)</h3>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Sistema web que permite visualizar um catálogo de doramas, acessar páginas de detalhes, adicionar títulos aos favoritos, registrar usuários e integrar tudo com Firebase. Inclui layout responsivo.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-purple-700/20 text-purple-300 rounded-full text-sm">HTML5</span>
+                        <span class="px-3 py-1 bg-purple-700/20 text-purple-300 rounded-full text-sm">CSS3</span>
+                        <span class="px-3 py-1 bg-purple-700/20 text-purple-300 rounded-full text-sm">JavaScript</span>
+                        <span class="px-3 py-1 bg-purple-700/20 text-purple-300 rounded-full text-sm">Firebase RTDB</span>
+                        <span class="px-3 py-1 bg-purple-700/20 text-purple-300 rounded-full text-sm">Firebase Auth</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+<section id="contato" class="py-24 px-6 bg-gray-900">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h2 class="section-title">Vamos <span class="text-purple-400">Conversar?</span></h2>
+            <p class="text-lg text-gray-400 mb-12">
+                Estou sempre aberto a novas oportunidades, colaborações e para expandir minha rede.
+                Sinta-se à vontade para entrar em contato!
+            </p>
+            <div class="flex flex-wrap justify-center gap-6">
+                
+                <a href="cauafmartins01@gmail.com" class="flex items-center gap-2 px-6 py-3 border border-purple-600 text-purple-300 hover:bg-purple-900/40 rounded-lg shadow-md transition-all duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    Email
+                </a>
+                <a href="https://github.com/CauaFMartins" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-6 py-3 border border-purple-600 text-purple-300 hover:bg-purple-900/40 rounded-lg shadow-md transition-all duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.44-.78-3.5.25-1.02.23-2.3-1-3.4v.5c-.72 1.3-3.2 1.85-4.4.84-1.2-.5-.5-1.9-.3-2.9C11 4.5 9 5 8 5.4c-1.55 1.7-2 4.1-2 5.5v.5c0 3.5 3 5.5 6 5.5-.34.4-.67.8-1 1.3v4"/><path d="M22 12C22 7.4 18.6 4 14 4H2V20H14c4.6 0 8-3.4 8-8"/></svg>
+                    GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/cau%C3%A3-martins-149768260?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BvLGkLK4qTjmu2o7Gc17rmQ%3D%3D" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-6 py-3 border border-purple-600 text-purple-300 hover:bg-purple-900/40 rounded-lg shadow-md transition-all duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    
+<footer class="border-t border-gray-800 py-8 px-6 bg-gray-950">
+        <div class="container mx-auto text-center">
+            <p class="text-gray-500 text-sm">
+                © 2025 Cauã Martins Falcão Fontes da Silva. Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
