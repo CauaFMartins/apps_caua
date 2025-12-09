@@ -1,0 +1,182 @@
+body {
+  margin: 0;
+  font-family: 'Consolas', monospace; 
+  background-color: #050505; 
+  color: #FF00FF; 
+  padding: 20px;
+  
+  display: flex; 
+  justify-content: center; 
+  min-height: 100vh; 
+}
+
+:root {
+  --neon-primary: #FF00FF; 
+  --dark-accent: #1a1a1a;
+  --medium-grey: #444;
+}
+
+.dashboard-zeta {
+  max-width: 800px; 
+  margin: 0 auto; 
+  width: 100%; 
+}
+
+.header-zeta {
+    text-align: left;
+    border-bottom: 2px solid var(--neon-primary); 
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+.titulo-zeta {
+  color: var(--neon-primary); 
+  font-size: 1.8em;
+  margin: 0;
+  text-shadow: 0 0 5px rgba(255, 0, 255, 0.6);
+  border-bottom: 1px solid var(--medium-grey);
+  padding-bottom: 5px;
+}
+
+.saudacao-zeta {
+  color: #fff;
+  font-size: 1.1em;
+  margin-top: 10px;
+}
+
+.data-zeta {
+    color: #888;
+    font-size: 0.8em;
+}
+
+.main-feed {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.feed-titulo {
+    color: var(--neon-primary); 
+    font-size: 1.2em;
+    border-left: 4px solid #fff;
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
+
+.info-box {
+  background-color: var(--dark-accent);
+  border-left: 5px solid var(--medium-grey);
+  padding: 15px 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.box-titulo {
+    color: var(--neon-primary); 
+    font-size: 1.2em;
+    border-bottom: 1px dashed var(--medium-grey);
+    padding-bottom: 5px;
+    margin: 0 0 15px 0;
+}
+
+.info-box.destaque {
+    border: 1px solid var(--neon-primary); 
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.5);
+}
+
+.info-box.alerta {
+    border-left: 5px solid #ff004c;
+}
+
+.barra-progresso-zeta {
+  background-color: #333;
+  height: 25px;
+  border: 1px solid #555;
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+}
+
+.barra {
+  height: 100%;
+  background-color: var(--neon-primary); 
+  transition: width 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 5px;
+  color: #050505;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.status-texto {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.detalhes-destino-zeta {
+    line-height: 1.6;
+}
+.clima-zeta {
+    color: var(--neon-primary); 
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+.descricao-zeta {
+    font-style: italic;
+    font-size: 0.9em;
+    border-top: 1px solid #222;
+    padding-top: 10px;
+    margin-top: 15px;
+}
+
+.previsao-zeta-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.previsao-item {
+    background-color: #000000;
+    border: 1px solid var(--medium-grey);
+    padding: 10px;
+    border-radius: 3px;
+}
+.previsao-item.item-alerta { border-color: #ff004c; }
+
+.simbolo-zeta {
+    color: var(--neon-primary); 
+    font-size: 1.5em;
+    margin-right: 10px;
+    float: left;
+}
+
+.nome-zeta {
+    font-size: 0.8em;
+    margin: 0;
+    color: #aaa;
+}
+.valor-zeta {
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+}
+
+.relatorio-zeta {
+    list-style-type: none;
+    padding: 0;
+}
+
+.relatorio-zeta li {
+    background-color: #000000;
+    border-left: 3px solid var(--neon-primary); 
+    padding: 8px 10px;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
